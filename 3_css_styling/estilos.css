@@ -1,0 +1,147 @@
+/* 1 */
+/* selector-atributo-target { */
+[target] {
+  display: inline-block;
+  background-color: #fef9e7;
+  border: 2px dashed #f4b400;
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+/* 2 */
+/* selector-atributo-href-exacto { */
+[href="https://ejemplo.com"]
+{
+  display: inline-block;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* 3 */
+/* selector-atributo-href-starts { */
+[href^="https://"]
+{
+  display: inline-block;
+  border-left: 5px solid #64b5f6;
+  padding-left: 12px;
+  font-style: italic;
+  background-color: #f1f8ff;
+}
+
+/* 4 */
+/* selector-atributo-href-ends-pdf { */
+[href$=".pdf"] {
+  display: inline-block;
+  background-color: #fce4ec;
+  color: #ad1457;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* 5 */
+/* selector-atributo-href-contains-descarga { */
+[href*="descarga"] {
+  background-color: #e8f5e9;
+  border: 1px solid #43a047;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* 6 */
+/* selector-li-first-child { */
+li:first-child {
+  background-color: #fff8e1;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* 7 */
+/* selector-li-last-child { */
+li:last-child {
+  background-color: #ede7f6;
+  font-style: italic;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* 8 */
+/* selector-li-third-child { */
+li:nth-child(3) {
+  background-color: #ba68c8;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* 9 */
+/* selector-li-odd { */
+li:nth-child(odd) {
+  background-color: #e0f2f1;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* 10 */
+/* selector-input-focus { */
+input:focus {
+  border: 2px solid #00acc1;
+  outline: none;
+  background-color: #e0f7fa;
+  box-shadow: 0 0 6px #4dd0e1;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* 11 */
+/* selector-primer-parrafo-en-section { */
+p:first-child {
+  background-color: #fff3e0;
+  color: #4e342e;
+  font-size: 1.05rem;
+  padding: 10px;
+  border-left: 4px solid #ffb74d;
+}
+
+/* 12 */
+/* selector-p-inmediatamente-despues-de-h2 */
+h2 + p {
+  border-top: 3px solid #ff7043;
+  margin-top: 8px;
+  padding-top: 6px;
+}
+
+/* 13 */
+/* selector-p-despues-de-h2 { */
+h2 ~ p {
+  color: #3f51b5;
+  font-weight: 500;
+}
+
+/* 14 */
+/* selector-importante-hijo-directo-de-section { */
+section > .importante {
+  background-color: #f9fbe7;
+  border: 2px solid #cddc39;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* 15 */
+/* selector-nota-sin-oculta { */
+.nota:not(.oculta) {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  padding: 10px 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
