@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Margin Collapse Example</title>
+    <style>
+      /* Apply basic styling to visualize margin collapsing */
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 30px 0; /* 30px top and bottom margin */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Two consecutive divs with margins -->
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <!-- 
+    🧠 THEORY:
+    - Normally, you might expect the two margins (30px + 30px) to add up to 60px space.
+    - BUT due to "margin collapsing", the two vertical margins collapse into one single 30px margin.
+    - So the visible gap between the two boxes is only 30px, not 60px.
+  --></body>
+</html>
