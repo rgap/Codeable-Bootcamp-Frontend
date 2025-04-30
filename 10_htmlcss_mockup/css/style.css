@@ -1,0 +1,12 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: hsla(0, 0%, 9%, 1);
+  max-width: 768px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+.header {
+  margin: 3rem 0;
+}
