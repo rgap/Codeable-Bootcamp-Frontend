@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport Units Example</title>
+    <style>
+      /*
+      📘 THEORY:
+      Viewport units are relative to the size of the browser window:
+      
+      - 1vw = 1% of the viewport width
+      - 1vh = 1% of the viewport height
+      - 1vmin = 1% of the smaller between width and height
+      - 1vmax = 1% of the larger between width and height
+
+      💡 Introduced in CSS3 (around 2012–2013), viewport units are useful for responsive layouts.
+    */
+
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .box-vw {
+        width: 50vw; /* 50% of viewport width */
+        height: 20vh; /* 20% of viewport height */
+        background-color: lightcoral;
+        margin: 2vh auto;
+        text-align: center;
+        line-height: 20vh;
+      }
+
+      .box-vmin {
+        width: 30vmin; /* 30% of smaller side of the viewport */
+        height: 30vmin;
+        background-color: lightseagreen;
+        margin: 2vh auto;
+        line-height: 30vmin;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-vw">50vw × 20vh</div>
+    <div class="box-vmin">30vmin</div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REM Units Example</title>
+    <style>
+      /* 
+      👇 Theory: 
+      In CSS, 1rem = font-size of the root element (<html>).
+      By default, most browsers set <html> font-size to 16px. 
+      So, 1rem = 16px, 2rem = 32px, etc., unless overridden.
+    */
+
+      html {
+        font-size: 16px; /* You can change this to scale the whole site */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        padding: 2rem; /* 32px of padding */
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        font-size: 2rem; /* 32px */
+      }
+
+      p {
+        font-size: 1rem; /* 16px */
+        margin-bottom: 1.5rem; /* 24px */
+      }
+
+      .small-box {
+        width: 10rem; /* 160px */
+        height: 5rem; /* 80px */
+        background-color: lightblue;
+        padding: 1rem; /* 16px */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>REM Example</h1>
+    <p>This paragraph uses <code>1rem</code> for font-size, equal to 16px if the root is 16px.</p>
+    <div class="small-box">Box with width: 10rem and height: 5rem</div>
+  </body>
+</html>

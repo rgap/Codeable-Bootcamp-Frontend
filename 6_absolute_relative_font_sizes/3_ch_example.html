@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CH Units Example</title>
+    <style>
+      /*
+      📘 THEORY:
+      The `ch` unit is based on the width of the "0" (zero) character
+      of the **current font**. So:
+
+      - 1ch = width of "0" in the current font.
+      - 10ch = width of 10 zeros: "0000000000"
+      
+      📅 Introduced in CSS3 (circa 2013+).
+
+      ✅ Useful for controlling input fields or monospace layouts where character width matters.
+    */
+
+      body {
+        font-family: monospace; /* monospace fonts make ch units more predictable */
+        font-size: 16px;
+        padding: 2ch;
+        background-color: #fafafa;
+      }
+
+      h1 {
+        font-size: 2ch; /* Size is 2 times width of "0" */
+      }
+
+      .ch-box {
+        width: 30ch; /* Same width as 30 zero characters */
+        padding: 1ch;
+        border: 2px solid black;
+        background-color: lightyellow;
+        margin-top: 2ch;
+      }
+
+      input[type="text"] {
+        width: 20ch; /* Input field that fits ~20 characters */
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CH Example</h1>
+    <p>This paragraph has padding of 2ch, which is based on the width of the "0" character.</p>
+
+    <div class="ch-box">
+      This box is 30ch wide.<br />
+      Try typing into this input:
+      <br /><br />
+      <input type="text" placeholder="20ch wide" />
+    </div>
+  </body>
+</html>

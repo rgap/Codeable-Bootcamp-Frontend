@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inter Font Example</title>
+
+    <!-- 
+    🕰️ Historical Context:
+    Google Fonts launched in 2010 as a free and simple CDN-based way to load fonts across the web.
+    The Inter font was designed by Rasmus Andersson and released in 2016. It became widely adopted due to its screen-optimized readability
+    and support for variable font axes such as weight, italic, and optical sizing (opsz).
+  -->
+
+    <!-- 
+    ✅ Preconnect:
+    These lines establish early connections to Google's font servers (fonts.googleapis.com and fonts.gstatic.com),
+    reducing DNS resolution and TCP handshake latency for faster font loading.
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- 
+    ✅ Google Fonts CSS:
+    This loads the Inter font with support for italic, optical size, and all weight ranges (100–900).
+    The 'display=swap' strategy avoids render-blocking by immediately showing fallback fonts while Inter is loading.
+    
+    📦 Caching Behavior:
+    - The browser will download only the required font faces and Unicode ranges (thanks to unicode-range filtering).
+    - The actual WOFF2 files served from fonts.gstatic.com are cached for up to 1 year (via Cache-Control headers).
+    - These font files are reused across websites that use the same font URLs, improving performance for repeat visits.
+  -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+    <style>
+      /* 
+      👕 Apply Inter as the default font for the document.
+      If Inter hasn’t loaded yet, fallback to system sans-serif.
+    */
+      body {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding: 2rem;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    📄 Rendered Content:
+    This content is styled using the Inter font, showcasing its legibility and design optimized for user interfaces.
+  -->
+    <h1>Using Inter from Google Fonts</h1>
+    <p>
+      Inter is a modern variable font designed for screen readability. With multiple axes like <code>weight</code> and <code>opsz</code>, it adapts
+      well to various UI and content scenarios.
+    </p>
+    <p>
+      Only the necessary font faces (based on weight/style/text content) are downloaded. Cached font files are reused across sites using the same
+      Google Fonts URLs, making the experience faster for users who’ve visited other sites with Inter.
+    </p>
+  </body>
+</html>

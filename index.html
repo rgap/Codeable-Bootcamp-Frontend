@@ -18,8 +18,15 @@
         list-style-type: none;
         padding: 0;
       }
+      ul ul {
+        padding-left: 20px;
+        margin: 5px 0;
+      }
       li {
         margin: 10px 0;
+      }
+      li li {
+        margin: 5px 0;
       }
       a {
         color: #0066cc;
@@ -29,16 +36,73 @@
       a:hover {
         text-decoration: underline;
       }
+      .section-title {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <h1>Frontend Codeable Directory</h1>
     <ul>
-      <li><a href="./1_media_APIs/index.html">1. Media APIs</a></li>
-      <li><a href="./2_html_markup/terminos-y-condiciones.html">2. HTML Markup</a></li>
-      <li><a href="./3_css_styling/contenido.html">3. CSS Styling</a></li>
-      <li><a href="./4_box_model/1_box_sizing.html">4. Box Model</a></li>
-      <li><a href="./5_box_model_example/index.html">5. Box Model Example</a></li>
+      <li>
+        <span class="section-title">1. Media APIs</span>
+        <ul>
+          <li><a href="./1_media_APIs/index.html">Main Page</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">2. HTML Markup</span>
+        <ul>
+          <li><a href="./2_html_markup/terminos-y-condiciones.html">Términos y Condiciones</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">3. CSS Styling</span>
+        <ul>
+          <li><a href="./3_css_styling/contenido.html">Contenido</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">4. Box Model</span>
+        <ul>
+          <li><a href="./4_box_model/1_box_sizing.html">Box Sizing</a></li>
+          <li><a href="./4_box_model/2_responsive_thing.html">Responsive Thing</a></li>
+          <li><a href="./4_box_model/3_margin-auto_horizontal.html">Margin Auto Horizontal</a></li>
+          <li><a href="./4_box_model/4_margin_collapsing.html">Margin Collapsing</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">5. Box Model Example</span>
+        <ul>
+          <li><a href="./5_box_model_example/index.html">Main Example</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">6. Absolute &amp; Relative Font Sizes</span>
+        <ul>
+          <li><a href="./6_absolute_relative_font_sizes/1_rem_example.html">REM Example</a></li>
+          <li><a href="./6_absolute_relative_font_sizes/2_em_example.html">EM Example</a></li>
+          <li><a href="./6_absolute_relative_font_sizes/3_ch_example.html">CH Example</a></li>
+          <li><a href="./6_absolute_relative_font_sizes/4_font_example.html">Font Example</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">7. Viewport</span>
+        <ul>
+          <li><a href="./7_viewport/index.html">Main Page</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="section-title">8. Font Face</span>
+      </li>
+      <li>
+        <span class="section-title">9. Colors</span>
+        <ul>
+          <li><a href="./9_colors/1_colors.html">Colors</a></li>
+          <li><a href="./9_colors/2_transparent.html">Transparent</a></li>
+          <li><a href="./9_colors/3_svg_color.html">SVG Color</a></li>
+        </ul>
+      </li>
     </ul>
   </body>
 </html>

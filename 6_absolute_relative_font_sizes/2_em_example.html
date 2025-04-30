@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EM Units Example</title>
+    <style>
+      /*
+      🧠 THEORY:
+      1em = font-size of the current element or its parent (not always the root).
+      em is relative, so it changes based on where it's used.
+      If body has font-size: 16px, then 1em = 16px inside body.
+
+      But inside a container with font-size: 1.5em, 1em = 1.5 * 16px = 24px.
+    */
+
+      body {
+        font-size: 16px; /* 1em = 16px */
+        font-family: Arial, sans-serif;
+        padding: 2em; /* 32px */
+      }
+
+      h1 {
+        font-size: 2em; /* 32px = 2 * 16px */
+      }
+
+      p {
+        font-size: 1em; /* 16px */
+        margin-bottom: 1.5em; /* 24px */
+      }
+
+      .container {
+        font-size: 1.25em; /* 20px (1.25 * 16px) */
+      }
+
+      .nested-box {
+        width: 10em; /* 200px (10 * 20px) */
+        height: 5em; /* 100px (5 * 20px) */
+        background-color: lightgreen;
+        padding: 1em; /* 20px */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EM Example</h1>
+    <p>This text uses <code>1em</code> for font-size, based on the body’s font-size.</p>
+
+    <div class="container">
+      <p>This container has <code>font-size: 1.25em</code> (20px).</p>
+      <div class="nested-box">This box uses em for size and padding, relative to 1.25em = 20px.</div>
+    </div>
+  </body>
+</html>

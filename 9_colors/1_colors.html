@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Color Examples</title>
+    <style>
+      /*
+     * This box demonstrates different ways to define background colors in CSS.
+     */
+      .color-box {
+        border: 3px solid black;
+        width: 25rem;
+        height: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        color: white;
+
+        /*
+       * ✅ Named Color
+       * Easy to use, like `red`, `blue`, `darksalmon`, etc.
+       */
+        background-color: darksalmon;
+
+        /*
+       * ✅ RGB / RGBA
+       * Values from 0–255. Optional alpha (0 to 1).
+       * Example: rgba(233, 150, 122, 1)
+       */
+        /* background-color: rgba(233, 150, 122, 1); */
+
+        /*
+       * ✅ Hexadecimal Color: #RRGGBB
+       * Each pair represents red, green, blue (00 to FF).
+       * Example: #e9967a = rgb(233, 150, 122)
+       */
+        /* background-color: #e9967a; */
+
+        /*
+       * ✅ Hex Shorthand: #RGB
+       * Shortcut when each channel uses the same two digits.
+       * Example: #f80 = #ff8800 (orange)
+       */
+        /* background-color: #f80; */
+
+        /*
+       * ✅ HSL / HSLA
+       * Hue (0–360°), Saturation (%), Lightness (%), optional Alpha (0–1)
+       * Example: hsla(15, 73%, 70%, 1)
+       */
+        /* background-color: hsla(15, 73%, 70%, 1); */
+      }
+
+      .text-example {
+        color: violet;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Color Types</h1>
+
+    <div class="color-box">Background: <strong>darksalmon</strong></div>
+
+    <p class="text-example">This paragraph uses a named text color: <strong>violet</strong>.</p>
+  </body>
+</html>
