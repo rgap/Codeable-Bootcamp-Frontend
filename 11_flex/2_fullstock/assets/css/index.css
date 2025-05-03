@@ -1,0 +1,8 @@
+/* Layer that resets */
+@import "./normalize.css";
+
+/* Layer that serves the base styles shared across pages*/
+@import "./base.css";
+
+/* Layer that serves the styles for the components */
+@import "./categories.css";
