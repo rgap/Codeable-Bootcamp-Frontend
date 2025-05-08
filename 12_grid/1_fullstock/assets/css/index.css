@@ -1,0 +1,11 @@
+/* Layer that resets */
+@import "./normalize.css";
+
+/* Layer that serves the base styles shared across pages*/
+@import "./base.css";
+
+/* Layer that serves the styles for categories */
+@import "./categories.css";
+
+/* Layer that serves the styles for products */
+@import "./products.css";
